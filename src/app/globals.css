@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --secondBackground: #f1dfdf;
+  --shadowColor: #d3b8b8;
+  --hoverColor: #977a7a;
+  --font: Elephant;
+}
+@font-face {
+  font-family: 'Elephant';
+  src: url('fonts/ELEPHNT.TTF') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: var(--hoverColor);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
